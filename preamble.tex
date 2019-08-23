@@ -1,0 +1,41 @@
+\documentclass{memoir}
+
+\usepackage{ifxetex}
+\usepackage{amssymb} % Essential to be included before xunicode
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifxetex
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setromanfont[Mapping=tex-text]{Liberation Serif}
+\setsansfont[Mapping=tex-text]{Liberation Sans}
+\setmonofont[Mapping=tex-text]{Liberation Mono}
+\setdefaultlanguage{russian}
+
+\else % not XeTeX
+
+\iffalse
+
+\usepackage{type1ec}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,russianb]{babel}
+
+\else
+
+\message{XeTeX only document}
+\stop
+
+\fi
+
+\fi % not XeTeX
+
+
+\newcommand{\sk}{\smallskip}
+\newcommand{\nb}[1]{{\small \emph{\textcolor{blue}{#1}}}}
+
