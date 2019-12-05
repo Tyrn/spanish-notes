@@ -1,12 +1,21 @@
 \documentclass[14pt,a4paper,oneside]{memoir}
 
-\setlrmarginsandblock{3cm}{2.5cm}{*}
+\setlrmarginsandblock{2.5cm}{2.2cm}{*}
 \setulmarginsandblock{2.5cm}{2.5cm}{*}
 \checkandfixthelayout
 
 %\setlrmarginsandblock{3.5cm}{2.5cm}{*}
 %\setulmarginsandblock{2.5cm}{*}{1}
 %\checkandfixthelayout
+
+% Keep indentations with ragged right.
+\makeatletter
+\newcommand\iraggedright{%
+  \let\\\@centercr\@rightskip\@flushglue \rightskip\@rightskip
+  \leftskip\z@skip}
+\makeatother
+
+\iraggedright
 
 \usepackage{ifxetex}
 \usepackage{amssymb} % Essential to be included before xunicode
