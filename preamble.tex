@@ -1,5 +1,13 @@
 \documentclass[14pt,a4paper,oneside]{memoir}
 
+\setlrmarginsandblock{3cm}{2.5cm}{*}
+\setulmarginsandblock{2.5cm}{2.5cm}{*}
+\checkandfixthelayout
+
+%\setlrmarginsandblock{3.5cm}{2.5cm}{*}
+%\setulmarginsandblock{2.5cm}{*}{1}
+%\checkandfixthelayout
+
 \usepackage{ifxetex}
 \usepackage{amssymb} % Essential to be included before xunicode
 \usepackage{xcolor}
@@ -49,7 +57,8 @@
 
 \sloppy
 
-\newcommand{\sk}{\smallskip}
+\newcommand{\bsk}{\vspace{20pt}}
+\newcommand{\sk}{\vspace{5pt}}
 \newcommand{\pp}{\textcolor{red}}   % Prepositional Pronoun.
 \newcommand{\lp}{\textcolor{brown}} % Lexicalized Pronoun.
 \newcommand{\bl}{\textcolor{blue}}  % Just blue.
