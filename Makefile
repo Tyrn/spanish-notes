@@ -17,6 +17,7 @@ mopup:
 
 cleantarget:
 	find . -type f -name '*.pdf'  -delete
+	find . -type f -name '*.docx'  -delete
 
 clean: mopup cleantarget
 
