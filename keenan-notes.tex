@@ -1,4 +1,80 @@
-\input{preamble}
+\documentclass[14pt,a4paper,oneside]{memoir}
+
+\setlrmarginsandblock{2.5cm}{2.2cm}{*}
+\setulmarginsandblock{2.5cm}{2.5cm}{*}
+\checkandfixthelayout
+
+%\setlrmarginsandblock{3.5cm}{2.5cm}{*}
+%\setulmarginsandblock{2.5cm}{*}{1}
+%\checkandfixthelayout
+
+% Keep indentations with ragged right.
+\makeatletter
+\newcommand\iraggedright{%
+  \let\\\@centercr\@rightskip\@flushglue \rightskip\@rightskip
+  \leftskip\z@skip}
+\makeatother
+
+\usepackage{ifxetex}
+\usepackage{amssymb} % Essential to be included before xunicode
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifxetex
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setromanfont[Mapping=tex-text]{Liberation Serif}
+\setsansfont[Mapping=tex-text]{Liberation Sans}
+\setmonofont[Mapping=tex-text]{Liberation Mono}
+\setdefaultlanguage{english}
+
+\else % not XeTeX
+
+\iffalse
+
+\usepackage{type1ec}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,russianb]{babel}
+
+\else
+
+\message{XeTeX only document}
+\stop
+
+\fi
+
+\fi % not XeTeX
+
+%%%%%%%%%%%%% Common preamble %%%%%%%%%%%%
+
+%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+\usepackage{graphicx}
+\usepackage{textcomp}
+
+\usepackage{indentfirst}
+\frenchspacing
+\clubpenalty=10000
+\widowpenalty=10000
+
+\sloppy
+
+\newcommand{\bsk}{\vspace{20pt}}
+\newcommand{\sk}{\vspace{5pt}}
+\newcommand{\pp}{\textcolor{red}}   % Prepositional Pronoun.
+\newcommand{\lp}{\textcolor{brown}} % Lexicalized Pronoun.
+\newcommand{\bl}{\textcolor{blue}}  % Just blue.
+\newcommand{\nb}[1]{{\small \emph{\textcolor{blue}{#1}}}}
+
+\usepackage{indentfirst}
+
+%\input{preamble}
+
 \chapterstyle{verville}
 \usepackage[hidelinks]{hyperref}
 \setsecnumdepth{subsection}
@@ -901,7 +977,7 @@ For "bald," you can use either \emph{calvo} (polite) or \emph{pelón} (irreveren
 
 %BALÓN
 The common word for "ball," from about grapefruit
-size on up. Smaller balls are called bolas or pelotas. "Balloon" is
+size on up. Smaller balls are called \emph{bolas} or \emph{pelotas}. "Balloon" is
 \emph{globo}, just so you know.
 
 \section{\emph{billón}}
@@ -924,6 +1000,174 @@ strangeness to some and gallantry to others. You don't need to know
 "bizarre" if you tend to translate your thoughts fairly literally from English to Spanish. For "bizarre," use \emph{raro} or \emph{extraño}.
 
 \section{\emph{"capable"}}
+
+%"CAPABLE"
+This word doesn't even exist in Spanish, but if
+you were to use it, it would be understood as "castratable." Saying
+someone is \emph{un hombre capable}, therefore, does not mean he is "capable" but rather in imminent danger of being rendered "incapable."
+The right word for "capable" is \emph{capaz}; "incapable" is \emph{incapaz}, which
+covers "incompetent" as well.
+
+\section{\emph{cargo}}
+
+%CARGO
+Almost works but not quite. \emph{Carga}, with the feminine ending, is the right word for "cargo." \emph{Cargo} in Spanish generally
+means "job position" or "post." \emph{El encargado} is "the guy in charge."
+
+\section{\emph{carpeta}}
+
+%CARPETA
+Usually a "portfolio" of the sort for keeping and
+carrying papers. It could also be a simple manila folder or a file. It is
+never a "carpet," which is covered by \emph{tapete} or \emph{alfombra}. Nonetheless,
+thanks to the influence of English, it is said (perhaps apocryphally) that
+Spanish-speaking residents of the United States say things like \emph{Voy a
+vacunar la carpeta} for "I'm going to vacuum the carpet." In fact, this
+statement means "I'm going to vaccinate the portfolio." (See Appendix
+B for more English-influenced words and phrases.)
+
+\section{\emph{chocar}}
+
+%CHOCAR
+A tricky trickster. This word has long existed in
+Spanish to mean "to crash," as in what happens to a car that is driven
+recklessly. A few hundred years ago, though, the English word "shock"
+began to take on some trendy new scientific meanings, and a handful
+of these were assigned to the old standby \emph{chocar} and its derivatives.
+Thus while un choque has always meant "a crash," in recent years it
+has been expanded to cover "a state of shock" (such as the driver's condition after the car's choque). It is also in widespread use for a powerful electrical shock, though \emph{chocar} as a verb is not used for "to shock
+(electrically)." For that, use \emph{dar choque} or, in many countries, \emph{dar toques}. (Generally, \emph{un choque} will kill you and \emph{un toque} won't.) \emph{La lámpara me dio toques} = "The lamp gave me a shock." To confuse matters more, sometimes shock is used instead of \emph{choque}.
+
+\section{\emph{chocante}}
+
+%CHOCANTE
+As an adjective, this works pretty well as
+"shocking" but usually conveys a distinct disapproval that isn't implicit in the English word. In some contexts, especially in reference to
+people, it comes close to meaning "offensive" or "rude." \emph{Me choca}, by
+extension, is a common colloquial way of saying you strongly dislike
+something: \emph{Me choca el chocolate} = "I hate chocolate."
+
+\section{\emph{complexión}}
+
+%COMPLEXIÓN
+Not your skin texture, as in English, but your
+general physical structure and shape, or "build"---in other words, fat,
+skinny, pear-shaped, or just about right. Government forms in Spanish-speaking countries often ask about your \emph{complexión}, and as long as
+you remember not to put "cleared up years ago," you'll be fine. For
+skin condition, stick to \emph{piel} (all skin) or \emph{cutis} (especially facial skin).
+"You have a nice complexion" is expressed by \emph{Tienes buen cutis}.
+
+\section{\emph{compromiso}}
+
+%COMPROMISO
+Yes, it works as "compromise," but a far more
+common usage is to mean "commitment." The verb \emph{comprometer} is
+similarly double-edged. \emph{Me comprometo con las mujeres} could be a
+politician's way of saying he or she is committed to his or her female
+constituents and connotes no "compromising" situations. The same
+sense of obligation is present in the common marketplace remark
+\emph{sin compromiso}, which means you can try on a blouse, for instance,
+"without committing" yourself to buy it. \emph{Compromiso} is also an
+"appointment" or "engagement." \emph{Tengo un compromiso después de 1a
+comida} = "I have an appointment after lunch." "Commitment" can.
+also be used this way, but it sounds a bit like power-breakfast English,
+whereas in Spanish it is an everyday expression.
+
+\section{\emph{copa}}
+
+%COPA
+If you ask for your "cup of coffee" as a \emph{copa de café} in
+the Spanish-speaking world, don't be surprised if you're served your
+coffee "Irish" or with a coffee liqueur. In general usage, a \emph{copa} is a
+stemmed glass or goblet of the sort used for wine or champagne. Thus
+\emph{copa}, in a restaurant setting, almost always suggests an alcoholic beverage of some sort. Just as you wouldn't think of asking for coffee in a
+goblet, your waiter won't think of serving something in a \emph{copa} without
+a little booze in it. \emph{Taza} is the correct word for a coffee-style "cup."
+
+\section{\emph{corriente}}
+
+%CORRIENTE
+This word is only partly tricky, but when it's
+tricky, it's dangerously so. Basically you can use it safely as a noun to
+mean "current"---any sort of electrical, river, or political currents---but not as an adjective. As a modifier, \emph{corriente} suggests "cheap" or
+"trashy"; when used for people, it is a definite insult, equating with
+"rude" or "vulgar." To convey "current" in the sense of "now in progress," you should take care to use \emph{presente} or \emph{actual} (see above).
+
+\section{\emph{decepción}}
+
+%DECEPCIÓN
+A classic trickster. \emph{Decepción} means "disappointment" or "disillusionment," often with no suggestion whatsoever
+of deceit. Likewise, \emph{decepcionar} means "to disappoint," and \emph{decepcionado} means "disappointed." \emph{Me decepcionó su novio} means you
+were unimpressed by someone's boyfriend, not that he talked you out
+of your inheritance. For "to deceive" and its derivatives you're better
+off with \emph{engañar}. \emph{Defraudar} can work either way: "to defraud (monetarily)" or "to disillusion," "to let (someone) down."
+
+\section{\emph{disgustar}}
+
+%DISGUSTAR
+Not "to disgust" but "to cause displeasure"---a
+subtle but important difference. Turned around, with the speaker as
+the indirect object (as with gustar), it means simply "to dislike." \emph{Me
+disgustan los pepinos} means you don't like cucumbers, not necessarily
+that they make you sick. For "to disgust," \emph{asquear} or \emph{dar asco} is appropriate: \emph{Los pepinos me dan asco}. Similarly, "disgusting" would be
+\emph{asqueroso}. Used to describe a person, it conveys the idea of extreme
+sleaziness. \emph{Es un tipo asqueroso} = "He's a real slimeball."
+
+\section{\emph{"dum dum da dum dum, tump tump"}}
+
+%"DUM DUM DA DUM DUM, TUMP TUMP"
+A non-verbal trickster of the most dangerous sort. It's hard to convey the sound pattern
+in writing (one rendering, perhaps from vaudeville days, is "shave and
+a haircut---two bits"), but the pattern is familiar to everyone. Imagine
+yourself knocking it on a door or tapping it out on your car horn. Got
+it? Now consider that in certain Latin countries, Mexico especially,
+what you've just said is, essentially, "Fuck your mother." Knock that
+on a door in Mexico and be prepared to see someone with a shotgun
+open it; tap it on your car horn and you'll have twenty vehicles gunning for you. Tap it on your car horn when there's a police car in front
+of you and you've got serious problems.
+
+\section{\emph{embarazado}}
+
+%EMBARAZADO
+The most famous trickster of all, leading to
+all sorts of colorful anecdotes from travelers. The word actually can
+mean "embarrassed" in certain contexts and in certain expressions,
+but it also means "pregnant." By using it, even correctly, you open
+yourself to no end of silliness and smirks. Better to stick to the common ways of saying "embarrassed": \emph{apenado} and \emph{penoso}, both from
+the word \emph{pena} (see below). \emph{Dar pena} is good for "to embarrass." If you
+don't want to speak in public because it embarrasses you, bow out with
+a \emph{Me da pena}. For "How embarrassing!" (as in "What a fool I've made
+of myself!"), a simple \emph{¡Que pena!} will suffice. A stronger concept like
+"shame," often with moralistic overtones, is covered by \emph{vergüenza}.
+\emph{Pena} is more the embarrassment that comes of shyness or prudishness.
+
+\section{\emph{en absoluto}}
+
+%EN ABSOLUTO
+Not "absolutely" but the opposite---"absolutely not." If you want to avoid using it altogether, that's fine, too.
+Use \emph{claro} for "absolutely" and \emph{claro que no} for "absolutely not." But
+learn the correct meaning of \emph{en absoluto} for those times when it's
+used on you.
+
+\section{\emph{enfrente de}}
+
+%ENFRENTE DE
+A sneaky trickster and one that can cause
+crossed signals with the best of them. It means "in front of" in the
+sense of "across the way (or street) from" or "facing." Thus, if you tell
+your friends to pick you up \emph{enfrente del cine} and you're waiting in
+front of the movie theater, expect to see your friends waiting across
+the street. \emph{Frente a} is equally misleading, meaning the same as \emph{enfrente de}. For "in front of" as we use it in English, try \emph{en 1a puerta de}
+("at the door of") to avoid any misinterpretations. \emph{Al frente de} can also
+be used, but why risk the confusion? (See also Chapter 11 under
+"Front.")
+
+\section{\emph{excitado}}
+
+%EXCITADO
+An easy one to slip in unawares, this trickster
+probably conveys more than you bargained for. The English translation
+is "aroused," sexual overtones included. For "excited," use \emph{emocionado}; for "exciting," \emph{emocionante}.
 
 \chapter{Our Fellow Human Beings}
 
