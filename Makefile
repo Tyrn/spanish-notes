@@ -13,6 +13,7 @@ mopup:
 	find . -type f -name '*.idx'  -delete
 	find . -type f -name '*.ilg'  -delete
 	find . -type f -name '*.ind'  -delete
+	find . -type f -name '*.out'  -delete
 	find . -type f -name '*.toc'  -delete
 
 cleantarget:
