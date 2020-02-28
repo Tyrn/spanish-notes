@@ -1,0 +1,130 @@
+\documentclass[14pt,a4paper,oneside]{memoir}
+
+%https://tex.stackexchange.com/questions/409715/memoir-contents-spacing-for-section-number
+\setlength\cftsectionnumwidth{3em}
+
+\setlrmarginsandblock{2.5cm}{2.2cm}{*}
+\setulmarginsandblock{2.5cm}{2.5cm}{*}
+\checkandfixthelayout
+
+\usepackage{datetime2}
+
+%\setlrmarginsandblock{3.5cm}{2.5cm}{*}
+%\setulmarginsandblock{2.5cm}{*}{1}
+%\checkandfixthelayout
+
+% Keep indentations with ragged right.
+\makeatletter
+\newcommand\iraggedright{%
+  \let\\\@centercr\@rightskip\@flushglue \rightskip\@rightskip
+  \leftskip\z@skip}
+\makeatother
+
+\usepackage{ifxetex}
+\usepackage{amssymb} % Essential to be included before xunicode
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifxetex
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setromanfont[Mapping=tex-text]{Liberation Serif}
+\setsansfont[Mapping=tex-text]{Liberation Sans}
+\setmonofont[Mapping=tex-text]{Liberation Mono}
+\setdefaultlanguage{english}
+
+\else % not XeTeX
+
+\iffalse
+
+\usepackage{type1ec}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,russianb]{babel}
+
+\else
+
+\message{XeTeX only document}
+\stop
+
+\fi
+
+\fi % not XeTeX
+
+%%%%%%%%%%%%% Common preamble %%%%%%%%%%%%
+
+%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+\usepackage{graphicx}
+\usepackage{textcomp}
+
+\usepackage{indentfirst}
+\frenchspacing
+\clubpenalty=10000
+\widowpenalty=10000
+
+\sloppy
+
+\newcommand{\bsk}{\vspace{20pt}}
+\newcommand{\sk}{\vspace{5pt}}
+\newcommand{\pp}{\textcolor{red}}   % Prepositional Pronoun.
+\newcommand{\lp}{\textcolor{brown}} % Lexicalized Pronoun.
+\newcommand{\bl}{\textcolor{blue}}  % Just blue.
+\newcommand{\nb}[1]{{\small \emph{\textcolor{blue}{#1}}}}
+
+\usepackage{indentfirst}
+
+\usepackage{csquotes}        % Defines \enquote
+\usepackage{microtype}       % For hanging indents (no config needed)
+
+%\input{preamble}
+
+\chapterstyle{verville}
+\usepackage[hidelinks]{hyperref}
+\setsecnumdepth{subsection}
+
+\newcommand{\inda}{\hspace{40pt}}
+\newcommand{\indu}{\hspace{20pt}}
+
+\begin{document}
+
+\frontmatter
+
+\begin{titlingpage}
+\title{Breaking Out of Beginner's Spanish}
+\posttitle{\par\vskip1em{\normalfont\normalsize\maltese\par}\end{center}}
+\author{Joseph J. Keenan}
+\date{2004}
+
+\maketitle
+\end{titlingpage}
+
+\tableofcontents*
+
+\mainmatter
+
+\input{01-a-gringo}
+\input{02-verbal-manners}
+\input{03-tricksters}
+\input{04-our-fellow-human-beings}
+\input{05-the-secret-life-of-verbs}
+\input{06-the-twilight-zone}
+\input{07-sixty-four-verbs}
+\input{08-cranking-up}
+\input{09-snappy-answers}
+\input{10-invective-and-obscenity}
+\input{11-which-is-which}
+\input{12-say-it-right}
+\input{13-spanish-roots}
+\input{14-the-big-mix}
+
+\begin{flushright}
+    {\tiny{Nunc dimittis}, \DTMnow}
+\end{flushright}
+
+\end{document}
+
