@@ -1,12 +1,16 @@
 \input{preamble}
 \usepackage{longtable}
-%\iraggedright
+\usepackage{ragged2e}
+
 \newcommand{\vv}{\\}
 
 \begin{document}
 
-%\begin{longtable}[c]{|r|l|l|l|}
-\begin{longtable}[c]{|r|p{1.8in}|p{1.8in}|p{1.8in}|}
+{\RaggedRight
+\bgroup
+\def\arraystretch{1.5}%  1 is the default, change whatever you need
+
+\begin{longtable}[c]{rp{1.8in}p{1.8in}p{1.8in}}
  \caption*{Firearms terminology\label{long}}\\
 
  %\hline
@@ -16,24 +20,29 @@
  \hline
  \endfirsthead
 
- \hline
- \multicolumn{4}{|c|}{Continuation of Table \ref{long}}\\
+ %\hline
+ %\multicolumn{4}{|c|}{Continuation of Table \ref{long}}\\
  \hline
  & English & Russian & Spanish\\
  \hline
  \endhead
 
- \hline
+ %\hline
  \endfoot
 
- \hline
- \multicolumn{4}{|c|}{End of Table}\\
- \hline\hline
+ %\hline
+ %\multicolumn{4}{c}{End of Table}\\
+ %\hline\hline
  \endlastfoot
 
  1 & line of departure & линия бросания & línea de proyección\vv
- 2 & angle of jump & угол вылета & ángulo de salida\vv
- 3 & releasing lever, trigger & спусковой рычаг, спусковой крючок & palanca disparadora, gatillo\vv
+ 2 & angle of jump & угол бросания & ángulo de salida\vv
+
+ 3
+ & releasing lever, trigger
+ & спусковой рычаг, спусковой крючок
+ & palanca disparadora, gatillo\vv
+
  4 & trigger guard & спусковая скоба & guardamonte\vv
  5 & trigger assembly & спусковой механизм & mecanismo de disparo\vv
  6 & trigger spring & пружина спускового крючка & muelle de gatillo\vv
@@ -41,6 +50,297 @@
  8 & trigger pin & штифт спускового крючка & pasador del gatillo\vv
  9 & sear & шептало & fiador\vv
  10 & & & \vv
+ 11 & & & \vv
+ 12 & & & \vv
+ 13 & & & \vv
+ 14 & & & \vv
+ 15 & & & \vv
+ 16 & & & \vv
+ 17 & & & \vv
+ 18 & & & \vv
+ 19 & & & \vv
+ 20 & & & \vv
+ 21 & & & \vv
+ 22 & & & \vv
+ 23 & & & \vv
+ 24 & & & \vv
+ 25 & & & \vv
+ 26 & & & \vv
+ 27 & & & \vv
+ 28 & & & \vv
+ 29 & & & \vv
+ 30 & & & \vv
+ 31 & & & \vv
+ 32 & & & \vv
+ 33 & & & \vv
+ 34 & & & \vv
+ 35 & & & \vv
+ 36 & & & \vv
+ 37 & & & \vv
+ 38 & & & \vv
+ 39 & & & \vv
+ 40 & & & \vv
+ 41 & & & \vv
+ 42 & & & \vv
+ 43 & & & \vv
+ 44 & & & \vv
+ 45 & & & \vv
+ 46 & & & \vv
+ 47 & & & \vv
+ 48 & & & \vv
+ 49 & & & \vv
+ 50 & & & \vv
+ 51 & & & \vv
+ 52 & & & \vv
+ 53 & & & \vv
+ 54 & & & \vv
+ 55 & & & \vv
+ 56 & & & \vv
+ 57 & & & \vv
+ 58 & & & \vv
+ 59 & & & \vv
+ 60 & & & \vv
+ 61 & & & \vv
+ 62 & & & \vv
+ 63 & & & \vv
+ 64 & & & \vv
+ 65 & & & \vv
+ 66 & & & \vv
+ 67 & & & \vv
+ 68 & & & \vv
+ 69 & & & \vv
+ 70 & & & \vv
+ 71 & & & \vv
+ 72 & & & \vv
+ 73 & & & \vv
+ 74 & & & \vv
+ 75 & & & \vv
+ 76 & & & \vv
+ 77 & & & \vv
+ 78 & & & \vv
+ 79 & & & \vv
+ 80 & & & \vv
+ 81 & & & \vv
+ 82 & & & \vv
+ 83 & & & \vv
+ 84 & & & \vv
+ 85 & & & \vv
+ 86 & & & \vv
+ 87 & & & \vv
+ 88 & & & \vv
+ 89 & & & \vv
+ 90 & & & \vv
+ 91 & & & \vv
+ 92 & & & \vv
+ 93 & & & \vv
+ 94 & & & \vv
+ 95 & & & \vv
+ 96 & & & \vv
+ 97 & & & \vv
+ 98 & & & \vv
+ 99 & & & \vv
+ 100 & & & \vv
+ 101 & & & \vv
+ 102 & & & \vv
+ 103 & & & \vv
+ 104 & & & \vv
+ 105 & & & \vv
+ 106 & & & \vv
+ 107 & & & \vv
+ 108 & & & \vv
+ 109 & & & \vv
+ 110 & & & \vv
+ 111 & & & \vv
+ 112 & & & \vv
+ 113 & & & \vv
+ 114 & & & \vv
+ 115 & & & \vv
+ 116 & & & \vv
+ 117 & & & \vv
+ 118 & & & \vv
+ 119 & & & \vv
+ 120 & & & \vv
+ 121 & & & \vv
+ 122 & & & \vv
+ 123 & & & \vv
+ 124 & & & \vv
+ 125 & & & \vv
+ 126 & & & \vv
+ 127 & & & \vv
+ 128 & & & \vv
+ 129 & & & \vv
+ 130 & & & \vv
+ 131 & & & \vv
+ 132 & & & \vv
+ 133 & & & \vv
+ 134 & & & \vv
+ 135 & & & \vv
+ 136 & & & \vv
+ 137 & & & \vv
+ 138 & & & \vv
+ 139 & & & \vv
+ 140 & & & \vv
+ 141 & & & \vv
+ 142 & & & \vv
+ 143 & & & \vv
+ 144 & & & \vv
+ 145 & & & \vv
+ 146 & & & \vv
+ 147 & & & \vv
+ 148 & & & \vv
+ 149 & & & \vv
+ 150 & & & \vv
+ 151 & & & \vv
+ 152 & & & \vv
+ 153 & & & \vv
+ 154 & & & \vv
+ 155 & & & \vv
+ 156 & & & \vv
+ 157 & & & \vv
+ 158 & & & \vv
+ 159 & & & \vv
+ 160 & & & \vv
+ 161 & & & \vv
+ 162 & & & \vv
+ 163 & & & \vv
+ 164 & & & \vv
+ 165 & & & \vv
+ 166 & & & \vv
+ 167 & & & \vv
+ 168 & & & \vv
+ 169 & & & \vv
+ 170 & & & \vv
+ 171 & & & \vv
+ 172 & & & \vv
+ 173 & & & \vv
+ 174 & & & \vv
+ 175 & & & \vv
+ 176 & & & \vv
+ 177 & & & \vv
+ 178 & & & \vv
+ 179 & & & \vv
+ 180 & & & \vv
+ 181 & & & \vv
+ 182 & & & \vv
+ 183 & & & \vv
+ 184 & & & \vv
+ 185 & & & \vv
+ 186 & & & \vv
+ 187 & & & \vv
+ 188 & & & \vv
+ 189 & & & \vv
+ 190 & & & \vv
+ 191 & & & \vv
+ 192 & & & \vv
+ 193 & & & \vv
+ 194 & & & \vv
+ 195 & & & \vv
+ 196 & & & \vv
+ 197 & & & \vv
+ 198 & & & \vv
+ 199 & & & \vv
+ 200 & & & \vv
+ 201 & & & \vv
+ 202 & & & \vv
+ 203 & & & \vv
+ 204 & & & \vv
+ 205 & & & \vv
+ 206 & & & \vv
+ 207 & & & \vv
+ 208 & & & \vv
+ 209 & & & \vv
+ 210 & & & \vv
+ 211 & & & \vv
+ 212 & & & \vv
+ 213 & & & \vv
+ 214 & & & \vv
+ 215 & & & \vv
+ 216 & & & \vv
+ 217 & & & \vv
+ 218 & & & \vv
+ 219 & & & \vv
+ 220 & & & \vv
+ 221 & & & \vv
+ 222 & & & \vv
+ 223 & & & \vv
+ 224 & & & \vv
+ 225 & & & \vv
+ 226 & & & \vv
+ 227 & & & \vv
+ 228 & & & \vv
+ 229 & & & \vv
+ 230 & & & \vv
+ 231 & & & \vv
+ 232 & & & \vv
+ 233 & & & \vv
+ 234 & & & \vv
+ 235 & & & \vv
+ 236 & & & \vv
+ 237 & & & \vv
+ 238 & & & \vv
+ 239 & & & \vv
+ 240 & & & \vv
+ 241 & & & \vv
+ 242 & & & \vv
+ 243 & & & \vv
+ 244 & & & \vv
+ 245 & & & \vv
+ 246 & & & \vv
+ 247 & & & \vv
+ 248 & & & \vv
+ 249 & & & \vv
+ 250 & & & \vv
+ 251 & & & \vv
+ 252 & & & \vv
+ 253 & & & \vv
+ 254 & & & \vv
+ 255 & & & \vv
+ 256 & & & \vv
+ 257 & & & \vv
+ 258 & & & \vv
+ 259 & & & \vv
+ 260 & & & \vv
+ 261 & & & \vv
+ 262 & & & \vv
+ 263 & & & \vv
+ 264 & & & \vv
+ 265 & & & \vv
+ 266 & & & \vv
+ 267 & & & \vv
+ 268 & & & \vv
+ 269 & & & \vv
+ 270 & & & \vv
+ 271 & & & \vv
+ 272 & & & \vv
+ 273 & & & \vv
+ 274 & & & \vv
+ 275 & & & \vv
+ 276 & & & \vv
+ 277 & & & \vv
+ 278 & & & \vv
+ 279 & & & \vv
+ 280 & & & \vv
+ 281 & & & \vv
+ 282 & & & \vv
+ 283 & & & \vv
+ 284 & & & \vv
+ 285 & & & \vv
+ 286 & & & \vv
+ 287 & & & \vv
+ 288 & & & \vv
+ 289 & & & \vv
+ 290 & & & \vv
+ 291 & & & \vv
+ 292 & & & \vv
+ 293 & & & \vv
+ 294 & & & \vv
+ 295 & & & \vv
+ 296 & & & \vv
+ 297 & & & \vv
+ 298 & & & \vv
+ 299 & & & \vv
 
 \end{longtable}
+\egroup
+}% end of \RaggedRight
 \end{document}
