@@ -1,0 +1,46 @@
+\input{preamble}
+\usepackage{longtable}
+%\iraggedright
+\newcommand{\vv}{\\}
+
+\begin{document}
+
+%\begin{longtable}[c]{|r|l|l|l|}
+\begin{longtable}[c]{|r|p{1.8in}|p{1.8in}|p{1.8in}|}
+ \caption*{Firearms terminology\label{long}}\\
+
+ %\hline
+ %\multicolumn{4}{|c|}{Begin of Table}\\
+ \hline
+ & English & Russian & Spanish\\
+ \hline
+ \endfirsthead
+
+ \hline
+ \multicolumn{4}{|c|}{Continuation of Table \ref{long}}\\
+ \hline
+ & English & Russian & Spanish\\
+ \hline
+ \endhead
+
+ \hline
+ \endfoot
+
+ \hline
+ \multicolumn{4}{|c|}{End of Table}\\
+ \hline\hline
+ \endlastfoot
+
+ 1 & line of departure & линия бросания & línea de proyección\vv
+ 2 & angle of jump & угол вылета & ángulo de salida\vv
+ 3 & releasing lever, trigger & спусковой рычаг, спусковой крючок & palanca disparadora, gatillo\vv
+ 4 & trigger guard & спусковая скоба & guardamonte\vv
+ 5 & trigger assembly & спусковой механизм & mecanismo de disparo\vv
+ 6 & trigger spring & пружина спускового крючка & muelle de gatillo\vv
+ 7 & trigger bar & спусковая тяга & varilla de disparo\vv
+ 8 & trigger pin & штифт спускового крючка & pasador del gatillo\vv
+ 9 & sear & шептало & fiador\vv
+ 10 & & & \vv
+
+\end{longtable}
+\end{document}
