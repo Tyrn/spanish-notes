@@ -1,28 +1,12 @@
 # Some simple tasks (sorry, UNIX only).
 
 mopup:
-	find . -type f -name '*~'  -delete
-	find . -type f -name '.*~'  -delete
-	find . -type f -name '@*'  -delete
-	find . -type f -name '#*#'  -delete
-	find . -type f -name '*.log'  -delete
-	find . -type f -name '*.synctex.gz'  -delete
-	find . -type f -name '*.fdb_latexmk'  -delete
-	find . -type f -name '*.aux'  -delete
-	find . -type f -name '*.fls'  -delete
-	find . -type f -name '*.idx'  -delete
-	find . -type f -name '*.ilg'  -delete
-	find . -type f -name '*.ind'  -delete
-	find . -type f -name '*.out'  -delete
-	find . -type f -name '*.toc'  -delete
+	git clean -Xdfe \!*.pdf
 
-cleantarget:
-	find . -type f -name '*.pdf'  -delete
-	find . -type f -name '*.docx'  -delete
-
-clean: mopup cleantarget
+clean:
+	git clean -xdf
 
 run:
-	latexmk main-*.tex
+	latexmk
 	
-.PHONY: mopup cleantarget clean
+.PHONY: mopup clean
