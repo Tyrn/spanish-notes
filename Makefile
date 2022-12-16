@@ -7,6 +7,6 @@ clean:
 	git clean -xdf
 
 run:
-	latexmk
+	latexmk main-*.tex
 	
 .PHONY: mopup clean
