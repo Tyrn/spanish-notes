@@ -3,6 +3,7 @@
 !.gitignore
 !*.md
 !Makefile
+!fmtex
 !.gitkeep
 !*.tex
 !*.py
